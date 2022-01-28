@@ -69,6 +69,9 @@ using System.Collections.Generic;
 public class FirstPersonAIO : MonoBehaviour {
 
 
+    private MirageManager _mirageManager;
+    //[SerializeField] GameObject _volume;
+
     #region Variables
 
     #region Input Settings
@@ -88,6 +91,7 @@ public class FirstPersonAIO : MonoBehaviour {
     public float cameraSmoothing = 5f;
     public bool lockAndHideCursor = false;
     public Camera playerCamera;
+    public GameObject _volumeMirage;
     public bool enableCameraShake=false;
     internal Vector3 cameraStartingPosition;
     float baseCamFOV;
@@ -332,6 +336,9 @@ public class FirstPersonAIO : MonoBehaviour {
         previousPosition = fps_Rigidbody.position;
         audioSource = GetComponent<AudioSource>();
         #endregion
+
+        _mirageManager = MirageManager.Instance;
+        _mirageManager.Mirage += ChangeWorld;
     }
 
     private void Update(){
@@ -807,6 +814,11 @@ public class FirstPersonAIO : MonoBehaviour {
 
     }
 
+    private void ChangeWorld()
+    {
+        _volumeMirage.SetActive(!_volumeMirage.activeSelf);
+    }
+
 
 }
 
@@ -935,6 +947,7 @@ public class FirstPersonAIO : MonoBehaviour {
             }            t.cameraSmoothing = EditorGUILayout.Slider(new GUIContent("Camera Smoothing","Determines how smooth the camera movement is."),t.cameraSmoothing,1,25);
             t.playerCamera = (Camera)EditorGUILayout.ObjectField(new GUIContent("Player Camera", "Camera attached to this controller"),t.playerCamera,typeof(Camera),true);
             if(!t.playerCamera){EditorGUILayout.HelpBox("A Camera is required for operation.",MessageType.Error);}
+            t._volumeMirage = (GameObject)EditorGUILayout.ObjectField(new GUIContent("Mirage Volume", "Camera attached to this controller"), t._volumeMirage, typeof(GameObject), true);
             t.enableCameraShake = EditorGUILayout.ToggleLeft(new GUIContent("Enable Camera Shake?", "Call this Coroutine externally with duration ranging from 0.01 to 1, and a magnitude of 0.01 to 0.5."), t.enableCameraShake);
             t.lockAndHideCursor = EditorGUILayout.ToggleLeft(new GUIContent("Lock and Hide Cursor","For debuging or if You don't plan on having a pause menu or quit button."),t.lockAndHideCursor);
             t.autoCrosshair = EditorGUILayout.ToggleLeft(new GUIContent("Auto Crosshair","Determines if a basic crosshair will be generated."),t.autoCrosshair);
