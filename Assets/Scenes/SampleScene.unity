@@ -1777,6 +1777,7 @@ GameObject:
   m_Component:
   - component: {fileID: 839295198}
   - component: {fileID: 839295197}
+  - component: {fileID: 839295199}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -1810,6 +1811,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &839295199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 839295196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7265186a083f1aa4fb22c07e312801c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _radioSource: {fileID: 2062495130}
+  _uiSource: {fileID: 0}
+  _radioClips:
+  - Clip: {fileID: 8300000, guid: b3fbfc4809d6c4946ba1c928d8d1821a, type: 3}
+    loopable: 0
 --- !u!1 &859072319
 GameObject:
   m_ObjectHideFlags: 0
@@ -3576,6 +3594,11 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!82 &2062495130 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 82712217391461128, guid: 2e62f5703e5f8d2488a5e1bc8433be41, type: 3}
+  m_PrefabInstance: {fileID: 15003131}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2091957786
 PrefabInstance:
   m_ObjectHideFlags: 0
