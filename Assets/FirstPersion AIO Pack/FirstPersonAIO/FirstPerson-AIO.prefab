@@ -132,6 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4448068258976056}
+  - component: {fileID: 8661067968796039120}
   - component: {fileID: 82712217391461128}
   - component: {fileID: 54587624234064098}
   - component: {fileID: 136239539305442568}
@@ -158,6 +159,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -180.00002, z: 0}
+--- !u!114 &8661067968796039120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1743903104223250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02a4b7848b207b84cad3bb94b0d45259, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactDistance: 3
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!82 &82712217391461128
 AudioSource:
   m_ObjectHideFlags: 0
@@ -296,14 +313,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf1a5ad4f9ffb154ca7813fdad11017a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  controllerPauseState: 0
   enableCameraMovement: 1
   mouseInputInversion: 0
+  cameraInputMethod: 0
   verticalRotationRange: 170
   mouseSensitivity: 10
   fOVToMouseSensitivity: 1
   cameraSmoothing: 5
   lockAndHideCursor: 1
   playerCamera: {fileID: 20724644957976244}
+  _volumeMirage: {fileID: 0}
   enableCameraShake: 1
   autoCrosshair: 1
   drawStaminaMeter: 1
