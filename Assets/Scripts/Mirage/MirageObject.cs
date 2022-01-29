@@ -7,13 +7,13 @@ public class MirageObject : MonoBehaviour
     // Start is called before the first frame update
     private MirageManager miri;
     private MeshRenderer _mesh;
-    private BoxCollider _boxcollider;
+    private Collider _collider;
     void Start()
     {
         miri = MirageManager.Instance;
-        miri.Mirage += Materialize;
+        EnableInteraction();
         _mesh = gameObject.GetComponent<MeshRenderer>();
-        _boxcollider = gameObject.GetComponent<BoxCollider>();
+        _collider = gameObject.GetComponent<Collider>();
     }
 
     // Update is called once per frame
@@ -25,8 +25,16 @@ public class MirageObject : MonoBehaviour
     void Materialize()
     {
         _mesh.enabled = !_mesh.enabled;
-        _boxcollider.enabled = !_boxcollider.enabled;
+        _collider.enabled = !_collider.enabled;
 
+    }
+
+    public void EnableInteraction() {
+        miri.Mirage += Materialize;
+    }
+
+    public void DisableInteraction() {
+        miri.Mirage -= Materialize;
     }
 
 }
