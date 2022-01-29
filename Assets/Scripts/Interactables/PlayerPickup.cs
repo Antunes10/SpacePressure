@@ -23,6 +23,8 @@ public class PlayerPickup : MonoBehaviour
             currentObject.GetComponent<Rigidbody>().isKinematic = true;
             currentObject.GetComponent<Collider>().enabled = false;
 
+            currentObject.layer = LayerMask.NameToLayer("HeldObject");
+
             currentObject.transform.parent = transform;
             currentObject.transform.localPosition = Vector3.zero;
             //currentObject.transform.localEulerAngles = Vector3.zero;
@@ -31,6 +33,7 @@ public class PlayerPickup : MonoBehaviour
 
     public void Drop() {
         if(currentObject != null) {
+            currentObject.layer = LayerMask.NameToLayer("Interactable");
             currentObject.GetComponent<Rigidbody>().isKinematic = false;
             currentObject.GetComponent<Collider>().enabled = true;
 
