@@ -6715,9 +6715,9 @@ MonoBehaviour:
   _radioClips:
   - {fileID: 11400000, guid: b4f6dd02d59b5a448be6367d9dc3d5da, type: 2}
   - {fileID: 11400000, guid: 8b02e292756d5714ba0d08a566e56726, type: 2}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 7fa5658a09dd6d84b8fe37fc64e59d5a, type: 2}
+  - {fileID: 11400000, guid: fab6c287d22f08f47a072241b7d02c53, type: 2}
+  - {fileID: 11400000, guid: 2d36da32cb3e7164fb5655b26157fd35, type: 2}
   - {fileID: 0}
   - {fileID: 0}
   _text: {fileID: 1507800757}
@@ -9556,7 +9556,7 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 27.94
+  m_Intensity: 27.42
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208

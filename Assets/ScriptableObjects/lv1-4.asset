@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f4a08d6109a1b347960b1688c140174, type: 3}
+  m_Name: lv1-4
+  m_EditorClassIdentifier: 
+  Clip: {fileID: 8300000, guid: c5e57d0c0a326e34eaec9d2770245dd7, type: 3}
+  Lines:
+  - line: 
+    wait: 0.5
+  - line: Well done, looks like we might survive this.
+    wait: 4
+  - line: 
+    wait: 0.8
+  - line: But lets not get carried away, there is still a lot to fix.
+    wait: 4.5
+  - line: 
+    wait: 0.5
+  - line: We need to access the escape pods to get out of this hellhole.
+    wait: 4
+  - line: 
+    wait: 1
+  - line: But I'm stuck in the cargo hold.
+    wait: 2
+  - line: 
+    wait: 0.5
+  - line: Which means you'll have to do the hard work.
+    wait: 3.7
+  - line: 
+    wait: 0.5
+  - line: I'll guide you through it.
+    wait: 2
+  - line: 
+    wait: 2.2
+  - line: Right, the next step...
+    wait: 2.2
+  - line: 
+    wait: 0.5
+  - line: We need to unlock the hatch to the second level.
+    wait: 2.7
+  - line: 
+    wait: 0.3
+  - line: The keys are on the Captain's cabin, I think
+    wait: 2.7
+  - line: 
+    wait: 0.5
+  loopable: 0
