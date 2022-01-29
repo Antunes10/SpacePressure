@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using TMPro;
 
 public class AudioManager : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioSource _uiSource;
 
     [SerializeField] private SoundClip[] _radioClips;
+    [SerializeField] private TextMeshProUGUI _text;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,9 +27,10 @@ public class AudioManager : MonoBehaviour
     {
         _radioSource.clip = _radioClips[newSound].Clip;
         _radioSource.Play();
+        StartCoroutine(SubtitlesPlay(_radioClips[newSound]));
     }
 
-    [Serializable]
+    /*[Serializable]
     public struct SoundClip
     {
         public AudioClip Clip;
@@ -40,7 +43,7 @@ public class AudioManager : MonoBehaviour
     {
         public String line;
         public float wait;
-    }
+    }*/
 
     public enum RadioSounds
     {
@@ -55,6 +58,15 @@ public class AudioManager : MonoBehaviour
         AliceGrowing = 9,
         AliceShrinking = 10,
         AliceGravity = 11
+    }
+
+    IEnumerator SubtitlesPlay(SoundClip soundclips)
+    {
+        foreach(SoundClip.SubtitleLine sb in soundclips.Lines)
+        {
+            _text.text = sb.line;
+            yield return new WaitForSeconds(sb.wait);
+        }
     }
 
     #region Singleton

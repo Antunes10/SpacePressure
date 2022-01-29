@@ -2,7 +2,8 @@ Intro:
 You're awake?
 Oh, thank God you're awake!
 --------------------I thougth I was going to die here...
-You've been cold for days, we... we though you were a goner.
+You've been cold for days, we...
+...we though you were a goner.
 
 You hit your head pretty hard when we crashed and you might have
 forgotten things.
@@ -20,7 +21,9 @@ It is crutial that you use it as little as possible.
 Or we will both die here.
 
 
-Right now we... I mean, you... will have to repair the air filters.
+Right now we...
+I mean, you...
+You will have to repair the air filters.
 You have to go to the storage to get two new fuses.
 Its at the right of the infirmary.
 

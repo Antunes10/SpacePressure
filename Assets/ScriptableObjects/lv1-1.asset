@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f4a08d6109a1b347960b1688c140174, type: 3}
+  m_Name: lv1-1
+  m_EditorClassIdentifier: 
+  Clip: {fileID: 8300000, guid: 5d944ce3ef1604d4da7697ad86576179, type: 3}
+  Lines:
+  - line: 
+    wait: 1
+  - line: You're awake?
+    wait: 1.5
+  - line: 
+    wait: 0.2
+  - line: Oh, thank God you're awake!
+    wait: 3
+  - line: You've been cold for days, we...
+    wait: 2.5
+  - line: ...we though you were a goner.
+    wait: 2
+  - line: 
+    wait: 0.5
+  - line: You hit your head pretty hard when we crashed and you might have forgotten
+      things.
+    wait: 5
+  - line: 
+    wait: 0.5
+  - line: I know you're confused but right now you'll have to trust me.
+    wait: 3.7
+  - line: 
+    wait: 1
+  - line: You have in you a device that allows you to travel to another dimension.
+    wait: 4
+  - line: 
+    wait: 0.5
+  - line: In that dimension your path will be easier.
+    wait: 2.5
+  - line: 
+    wait: 1.5
+  - line: Try to use it now to pass through the door.
+    wait: 3
+  - line: 
+    wait: 1
+  loopable: 0
