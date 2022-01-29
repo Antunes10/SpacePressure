@@ -19,6 +19,11 @@ public class MirageManager : MonoBehaviour
         {
             Mirage?.Invoke();
         }
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            Application.LoadLevel(Application.loadedLevel);
+        }
     }
 
     #region Singleton
