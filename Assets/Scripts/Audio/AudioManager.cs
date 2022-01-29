@@ -21,10 +21,9 @@ public class AudioManager : MonoBehaviour
         
     }
 
-    public void PlayRadioSound(RadioSounds newSound)
+    public void PlayRadioSound(int newSound)
     {
-        var i = (int)newSound;
-        _radioSource.clip = _radioClips[i].Clip;
+        _radioSource.clip = _radioClips[newSound].Clip;
         _radioSource.Play();
     }
 
@@ -32,18 +31,26 @@ public class AudioManager : MonoBehaviour
     public struct SoundClip
     {
         public AudioClip Clip;
+        public SubtitleLine[] Lines;
         public bool loopable;
+    }
+
+    [Serializable]
+    public struct SubtitleLine
+    {
+        public String line;
+        public float wait;
     }
 
     public enum RadioSounds
     {
         RadioIntro = 0,
-        AliceJumping = 2,
-        AliceFalling = 3,
-        AliceFallingHard = 4,
-        AliceColliding = 5,
-        AliceCoughing = 6,
-        AliceScreaming = 7,
+        FirstDoor = 1,
+        OneFilter = 2,
+        AliceFallingHard = 3,
+        AliceColliding = 4,
+        AliceCoughing = 5,
+        AliceScreaming = 6,
         AliceCrying = 8,
         AliceGrowing = 9,
         AliceShrinking = 10,

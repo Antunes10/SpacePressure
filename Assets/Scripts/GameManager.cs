@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 {
     // Start is called before the first frame update
     private MirageManager _mirManager;
+    private AudioManager _audioManager;
     private bool _onMirageWorld = false;
     private int _RadioProgQuests = 0;
     private int _RadioProgMirage = 0;
@@ -19,7 +20,10 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         _mirManager = MirageManager.Instance;
+        _audioManager = AudioManager.Instance;
         _mirManager.Mirage += ChangeWorld;
+
+        _audioManager.PlayRadioSound(0);
     }
 
     // Update is called once per frame
