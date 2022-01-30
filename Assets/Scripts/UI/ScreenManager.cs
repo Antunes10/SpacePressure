@@ -3,16 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class Screen : MonoBehaviour
+public class ScreenManager : MonoBehaviour
 {
     // Start is called before the first frame update
     [SerializeField] private Animator _animator;
-    private AudioManager _audioM;
 
     private event Action OnScreenFade;
     void Start()
     {
-        _audioM = AudioManager.Instance;
+
     }
 
     // Update is called once per frame
@@ -26,7 +25,7 @@ public class Screen : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.G))
         {
-            _audioM.PlayRadioSound(0);
+            ShowE();
         }
     }
 
@@ -34,4 +33,27 @@ public class Screen : MonoBehaviour
     {
         _animator.SetTrigger("Fade");
     }
+
+    void ShowE()
+    {
+        _animator.SetTrigger("ShowE");
+        _animator.SetBool("EShown", !_animator.GetBool("EShown"));
+    }
+
+
+    #region Singleton
+
+    private static ScreenManager _instance;
+
+    public static ScreenManager Instance
+    {
+        get
+        {
+            if (_instance == null) _instance = FindObjectOfType<ScreenManager>();
+            return _instance;
+        }
+    }
+
+    #endregion
+
 }
