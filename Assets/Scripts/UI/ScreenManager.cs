@@ -55,7 +55,6 @@ public class ScreenManager : MonoBehaviour
         if((_gameManager._ProgressGame == 0 || _gameManager._ProgressGame == 1) && count < 2)
         {
             ShowingE?.Invoke();
-            Debug.Log("SHOW E");
             ShowE();
             count += 1;
         }

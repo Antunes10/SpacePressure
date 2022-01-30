@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
     public int _ProgressGame = 0;
     private int _RadioProgMirage = 0;
     private int _RadioProgNarrative = 0;
-    private int _ProgressMirage = 0;
+    private int _ProgressDementia = 1;
 
     [SerializeField]  private float _timeRemaining;
     [SerializeField] private Camera _cam;
@@ -36,8 +36,14 @@ public class GameManager : MonoBehaviour
         {
             _timeRemaining -= Time.deltaTime;
             _volume.weight = 1 - _timeRemaining / 45;
+
+            if(_volume.weight > 0.2 * _ProgressDementia && _ProgressDementia < 5)
+            {
+                _ProgressDementia += 1;
+                Debug.Log(_ProgressDementia);
+            }
         }
-        Debug.Log(_timeRemaining);
+        //Debug.Log(_timeRemaining);
     }
 
     void ChangeWorld()
