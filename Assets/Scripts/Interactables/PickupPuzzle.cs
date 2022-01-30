@@ -18,7 +18,7 @@ public class PickupPuzzle : MonoBehaviour
     void PlacementPointCompleted() {
         if(++completedCount == placementPoints.Length) {
             Debug.Log("PUZZLE COMPLETED");
-            //TODO: activate mechanism
+            GameManager.Instance.AdvanceQuest();
         }
     }
 }
