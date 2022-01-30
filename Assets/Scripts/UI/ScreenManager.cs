@@ -11,6 +11,7 @@ public class ScreenManager : MonoBehaviour
     private AudioManager _audioManager;
 
     private event Action OnScreenFade;
+    public event Action ShowingE;
     void Start()
     {
         _gameManager = GameManager.Instance;
@@ -51,6 +52,7 @@ public class ScreenManager : MonoBehaviour
     {
         if(_gameManager._ProgressGame == 0 || _gameManager._ProgressGame == 1)
         {
+            ShowingE?.Invoke();
             Debug.Log("SHOW E");
             ShowE();
         }
