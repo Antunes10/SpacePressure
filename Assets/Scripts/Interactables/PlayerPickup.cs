@@ -8,7 +8,7 @@ public class PlayerPickup : MonoBehaviour
     public GameObject currentObject;
 
     void Start() {
-        Instance = this;
+        if(Instance == null) Instance = this;
     }
 
     void Update() {

@@ -16,7 +16,7 @@ public abstract class Interactable : MonoBehaviour
         SetOutlineAlpha(0);
     }
 
-    void Start() {
+    protected void Start() {
         outline = GetComponent<Outline>();
         SetOutlineAlpha(0);
     }
