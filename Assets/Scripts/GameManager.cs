@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
     private int _RadioProgNarrative = 0;
     private int _ProgressDementia = 1;
 
-    [SerializeField]  private float _timeRemaining;
+    [SerializeField]  public float _timeRemaining;
     [SerializeField] private Camera _cam;
     [SerializeField] private Volume _volume;
 

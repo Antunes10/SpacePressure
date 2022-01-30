@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using TMPro;
+using UnityEngine.UI;
 
 public class ScreenManager : MonoBehaviour
 {
@@ -10,7 +12,10 @@ public class ScreenManager : MonoBehaviour
     private GameManager _gameManager;
     private AudioManager _audioManager;
 
+    [SerializeField] private TextMeshProUGUI _timer;
+
     private int count = 0;
+    private float _timernumber;
 
     private event Action OnScreenFade;
     public event Action ShowingE;
@@ -33,10 +38,10 @@ public class ScreenManager : MonoBehaviour
             FadeScreen();
         }
 
-        if (Input.GetKeyDown(KeyCode.G))
-        {
-            ShowE();
-        }
+        _timernumber = GameManager.Instance._timeRemaining;
+        int minutes = Mathf.FloorToInt(_timernumber / 60F);
+        int seconds = Mathf.FloorToInt(_timernumber % 60F);
+        _timer.text = minutes.ToString("00") + ":" + seconds.ToString("00");
     }
 
     void FadeScreen()

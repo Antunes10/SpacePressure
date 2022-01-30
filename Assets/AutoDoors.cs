@@ -7,7 +7,7 @@ public class AutoDoors : MonoBehaviour
     // Start is called before the first frame update
     [SerializeField] private bool _locked;
     [SerializeField] private Animator _anim;
-    private bool _open;
+    public bool _open;
     private float _defaultPos;
     private Vector3 translation;
 

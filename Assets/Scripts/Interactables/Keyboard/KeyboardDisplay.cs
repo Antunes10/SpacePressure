@@ -9,7 +9,7 @@ public class KeyboardDisplay : MonoBehaviour
     public string currentString;
     
     private TextMeshProUGUI textDisplay;
-    [SerializeField] private GameObject _door;
+    [SerializeField] private AutoDoors _door;
 
     void Start() {
         textDisplay = GetComponentInChildren<TextMeshProUGUI>();
@@ -66,7 +66,7 @@ public class KeyboardDisplay : MonoBehaviour
         }
         
         Debug.Log("CODE ACTIVATED");
-        _door.SetActive(false);
+        _door._open = true;
         //TODO: activate machine/door
     }
 }
