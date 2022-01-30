@@ -65,7 +65,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ddc6ae4b3a5239b46b48b868179c03ee, type: 3}
       propertyPath: m_Name
-      value: pipe
+      value: pipe Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ddc6ae4b3a5239b46b48b868179c03ee, type: 3}
+--- !u!1 &7906833233203013251 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ddc6ae4b3a5239b46b48b868179c03ee, type: 3}
+  m_PrefabInstance: {fileID: 7024453505882299346}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &3194854983550413079
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7906833233203013251}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.061702073, y: 0.7787649, z: 0.105041035}
+  m_Center: {x: -0.00084454106, y: 0.0012804276, z: -0.020631982}

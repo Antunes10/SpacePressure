@@ -380,6 +380,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8faf2e6cff5c59f4b838a343c4c720bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  firstdoor: 0
+  _mesh1: {fileID: 0}
+  _mesh2: {fileID: 0}
+  _mesh3: {fileID: 0}
 --- !u!1 &8212235853321039924
 GameObject:
   m_ObjectHideFlags: 0
@@ -488,6 +492,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8faf2e6cff5c59f4b838a343c4c720bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  firstdoor: 0
+  _mesh1: {fileID: 0}
+  _mesh2: {fileID: 0}
+  _mesh3: {fileID: 0}
 --- !u!1 &8212235853400996549
 GameObject:
   m_ObjectHideFlags: 0
@@ -691,6 +699,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8faf2e6cff5c59f4b838a343c4c720bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  firstdoor: 0
+  _mesh1: {fileID: 0}
+  _mesh2: {fileID: 0}
+  _mesh3: {fileID: 0}
 --- !u!1 &8212235854001305745
 GameObject:
   m_ObjectHideFlags: 0
@@ -1275,6 +1287,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8faf2e6cff5c59f4b838a343c4c720bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  firstdoor: 0
+  _mesh1: {fileID: 0}
+  _mesh2: {fileID: 0}
+  _mesh3: {fileID: 0}
 --- !u!1 &8212235854898911686
 GameObject:
   m_ObjectHideFlags: 0
