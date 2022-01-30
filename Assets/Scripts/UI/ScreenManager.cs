@@ -7,10 +7,17 @@ public class ScreenManager : MonoBehaviour
 {
     // Start is called before the first frame update
     [SerializeField] private Animator _animator;
+    private GameManager _gameManager;
+    private AudioManager _audioManager;
 
     private event Action OnScreenFade;
     void Start()
     {
+        _gameManager = GameManager.Instance;
+        _audioManager = AudioManager.Instance;
+
+        _audioManager.EndLine += FinalLine;
+        _gameManager._advQuest += FinalLine;
 
     }
 
@@ -38,6 +45,15 @@ public class ScreenManager : MonoBehaviour
     {
         _animator.SetTrigger("ShowE");
         _animator.SetBool("EShown", !_animator.GetBool("EShown"));
+    }
+
+    void FinalLine()
+    {
+        if(_gameManager._ProgressGame == 0 || _gameManager._ProgressGame == 1)
+        {
+            Debug.Log("SHOW E");
+            ShowE();
+        }
     }
 
 

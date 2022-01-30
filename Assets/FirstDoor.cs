@@ -5,12 +5,15 @@ using UnityEngine;
 public class FirstDoor : MonoBehaviour
 {
     private AudioManager _audioManager;
+    private GameManager _gameManager;
+    [SerializeField] bool _progress;
 
     [SerializeField] private int _clip;
     // Start is called before the first frame update
     void Start()
     {
         _audioManager = AudioManager.Instance;
+        _gameManager = GameManager.Instance;
     }
 
     // Update is called once per frame
@@ -22,6 +25,10 @@ public class FirstDoor : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         _audioManager.PlayRadioSound(_clip);
+        if (_progress)
+        {
+            _gameManager.AdvanceQuest();
+        }
         gameObject.SetActive(false);
     }
 }

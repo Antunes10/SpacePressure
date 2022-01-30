@@ -12,6 +12,8 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private SoundClip[] _radioClips;
     [SerializeField] private TextMeshProUGUI _text;
 
+    public event Action EndLine;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -65,6 +67,10 @@ public class AudioManager : MonoBehaviour
     {
         foreach(SoundClip.SubtitleLine sb in soundclips.Lines)
         {
+            if(sb.endline == true)
+            {
+                EndLine?.Invoke();
+            }
             _text.text = sb.line;
             yield return new WaitForSeconds(sb.wait);
         }

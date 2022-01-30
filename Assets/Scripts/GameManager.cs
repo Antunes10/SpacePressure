@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     private MirageManager _mirManager;
     private AudioManager _audioManager;
     private bool _onMirageWorld = false;
-    private int _RadioProgQuests = 0;
+    public int _ProgressGame = 0;
     private int _RadioProgMirage = 0;
     private int _RadioProgNarrative = 0;
     private int _ProgressMirage = 0;
@@ -52,4 +52,25 @@ public class GameManager : MonoBehaviour
             _cam.cullingMask = -1;
         }
     }
+
+    public void AdvanceQuest()
+    {
+        _ProgressGame += 1;
+        _advQuest?.Invoke();
+    }
+
+    #region Singleton
+
+    private static GameManager _instance;
+
+    public static GameManager Instance
+    {
+        get
+        {
+            if (_instance == null) _instance = FindObjectOfType<GameManager>();
+            return _instance;
+        }
+    }
+
+    #endregion
 }

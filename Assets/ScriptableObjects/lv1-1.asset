@@ -16,37 +16,54 @@ MonoBehaviour:
   Lines:
   - line: 
     wait: 1
+    endline: 0
   - line: You're awake?
     wait: 1.5
+    endline: 0
   - line: 
     wait: 0.2
+    endline: 0
   - line: Oh, thank God you're awake!
     wait: 3
+    endline: 0
   - line: You've been cold for days, we...
     wait: 2.5
+    endline: 0
   - line: ...we though you were a goner.
     wait: 2
+    endline: 0
   - line: 
     wait: 0.5
+    endline: 0
   - line: You hit your head pretty hard when we crashed and you might have forgotten
       things.
     wait: 5
+    endline: 0
   - line: 
     wait: 0.5
+    endline: 0
   - line: I know you're confused but right now you'll have to trust me.
     wait: 3.7
+    endline: 0
   - line: 
     wait: 1
+    endline: 0
   - line: You have in you a device that allows you to travel to another dimension.
     wait: 4
+    endline: 0
   - line: 
     wait: 0.5
+    endline: 0
   - line: In that dimension your path will be easier.
     wait: 2.5
+    endline: 0
   - line: 
     wait: 1.5
+    endline: 0
   - line: Try to use it now to pass through the door.
     wait: 3
+    endline: 0
   - line: 
     wait: 1
+    endline: 1
   loopable: 0

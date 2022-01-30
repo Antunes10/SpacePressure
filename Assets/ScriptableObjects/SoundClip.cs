@@ -10,6 +10,7 @@ public class SoundClip : ScriptableObject
     {
         public string line;
         public float wait;
+        public bool endline;
     }
 
     public AudioClip Clip;
