@@ -17,7 +17,7 @@ public class AudioManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        GameManager.Instance._advQuest += toca;
     }
 
     // Update is called once per frame
@@ -31,6 +31,14 @@ public class AudioManager : MonoBehaviour
         _radioSource.clip = _radioClips[newSound].Clip;
         _radioSource.Play();
         StartCoroutine(SubtitlesPlay(_radioClips[newSound]));
+    }
+
+    void toca()
+    {
+        if(GameManager.Instance._ProgressGame == 2)
+        {
+            PlayRadioSound(3);
+        }
     }
 
     /*[Serializable]
