@@ -10,6 +10,11 @@ public class PlayerInteract : MonoBehaviour
     public TextMeshProUGUI interactCaption;
 
     private Interactable highlightedObject;
+
+    void Start() {
+        interactCaption.text = "";
+    }
+
     void Update() {
         Transform camera = Camera.main.transform;
         RaycastHit hit;
