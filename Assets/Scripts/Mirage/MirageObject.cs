@@ -12,6 +12,7 @@ public class MirageObject : MonoBehaviour
     [SerializeField] bool firstdoor;
     [SerializeField] private MeshRenderer _mesh1;
     [SerializeField] private MeshRenderer _mesh2;
+    [SerializeField] private MeshRenderer _mesh3;
 
     void Start()
     {
@@ -37,6 +38,7 @@ public class MirageObject : MonoBehaviour
         {
             _mesh1.enabled = !_mesh1.enabled;
             _mesh2.enabled = !_mesh2.enabled;
+            _mesh3.enabled = !_mesh3.enabled;
         }
         else
         {

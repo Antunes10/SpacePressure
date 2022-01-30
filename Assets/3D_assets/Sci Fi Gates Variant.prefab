@@ -118,6 +118,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2222422058291462059, guid: 22d2c44fed4ffa743aac7afe4d993905, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3047482896392196646, guid: 22d2c44fed4ffa743aac7afe4d993905, type: 3}
       propertyPath: m_Size.y
       value: 3.6087186
@@ -200,7 +204,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4972167997025983191, guid: 22d2c44fed4ffa743aac7afe4d993905, type: 3}
       propertyPath: m_Name
-      value: Sci Fi Gates
+      value: Sci Fi Gates Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6733737455791549223, guid: 22d2c44fed4ffa743aac7afe4d993905, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22d2c44fed4ffa743aac7afe4d993905, type: 3}
