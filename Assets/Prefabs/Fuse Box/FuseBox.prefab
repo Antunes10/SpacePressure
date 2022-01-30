@@ -134,6 +134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56b07499d084048488eb8e32c651ab75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  caption: '*Fuse Missing*'
   targetObjectTag: Fuse Pickup
   completed: 0
 --- !u!114 &3133469794540126338
@@ -317,6 +318,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56b07499d084048488eb8e32c651ab75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  caption: '*Fuse Missing*'
   targetObjectTag: Fuse Pickup
   completed: 0
 --- !u!114 &3133469795060552590

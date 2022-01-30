@@ -5,6 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(Outline))]
 public abstract class Interactable : MonoBehaviour
 {
+    public string caption;
     private Outline outline;
     public abstract void Interact();
 

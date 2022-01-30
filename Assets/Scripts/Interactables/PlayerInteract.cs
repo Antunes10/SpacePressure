@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PlayerInteract : MonoBehaviour
 {
     public float interactDistance;
     public LayerMask layerMask;
+    public TextMeshProUGUI interactCaption;
 
     private Interactable highlightedObject;
     void Update() {
@@ -23,6 +25,7 @@ public class PlayerInteract : MonoBehaviour
 
                 interactable.Highlight();
                 highlightedObject = interactable;
+                interactCaption.text = highlightedObject.caption;
 
                 if(Input.GetKeyDown(KeyCode.Mouse0)) {
                     highlightedObject.Interact();
@@ -33,6 +36,8 @@ public class PlayerInteract : MonoBehaviour
         } else if (highlightedObject != null) {
             highlightedObject.EndHighlight();
             highlightedObject = null;
+
+            interactCaption.text = "";
         }
         
     }

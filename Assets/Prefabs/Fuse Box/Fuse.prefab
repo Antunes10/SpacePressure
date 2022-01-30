@@ -127,6 +127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f17e4f2273572e04bb3f66ab92e4212d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  caption: Fuse
 --- !u!114 &2065517042540131682
 MonoBehaviour:
   m_ObjectHideFlags: 0
