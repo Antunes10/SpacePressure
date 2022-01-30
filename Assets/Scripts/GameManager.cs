@@ -51,7 +51,7 @@ public class GameManager : MonoBehaviour
         _onMirageWorld = !_onMirageWorld;
         if (!_onMirageWorld)
         {
-            _cam.cullingMask &= ~(1 << LayerMask.NameToLayer("Number"));
+            _cam.cullingMask &= ~(1 << LayerMask.NameToLayer("Mirage"));
         }
         else
         {
