@@ -8,11 +8,19 @@ public class MirageObject : MonoBehaviour
     private MirageManager miri;
     private MeshRenderer _mesh;
     private Collider _collider;
+
+    [SerializeField] bool firstdoor;
+    [SerializeField] private MeshRenderer _mesh1;
+    [SerializeField] private MeshRenderer _mesh2;
+
     void Start()
     {
         miri = MirageManager.Instance;
         EnableInteraction();
-        _mesh = gameObject.GetComponent<MeshRenderer>();
+
+        if (!firstdoor){
+            _mesh = gameObject.GetComponent<MeshRenderer>();
+        }
         _collider = gameObject.GetComponent<Collider>();
     }
 
@@ -24,7 +32,16 @@ public class MirageObject : MonoBehaviour
 
     void Materialize()
     {
-        _mesh.enabled = !_mesh.enabled;
+
+        if (firstdoor)
+        {
+            _mesh1.enabled = !_mesh1.enabled;
+            _mesh2.enabled = !_mesh2.enabled;
+        }
+        else
+        {
+            _mesh.enabled = !_mesh.enabled;
+        }
         _collider.enabled = !_collider.enabled;
 
     }
