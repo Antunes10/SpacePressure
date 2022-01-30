@@ -16,6 +16,8 @@ public class GhoulFade : MonoBehaviour
     }
 
     void Update() {
+        transform.LookAt(player.transform, Vector3.up);
+
         float distance = Vector3.Distance(player.transform.position, transform.position);
 
         if(distance < distanceStart && distance > distanceEnd && distance < minDistance) {
