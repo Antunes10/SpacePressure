@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
+using System;
 
 public class GameManager : MonoBehaviour
 {
@@ -17,6 +18,8 @@ public class GameManager : MonoBehaviour
     [SerializeField]  private float _timeRemaining;
     [SerializeField] private Camera _cam;
     [SerializeField] private Volume _volume;
+
+    public event Action _advQuest;
     void Start()
     {
         _mirManager = MirageManager.Instance;

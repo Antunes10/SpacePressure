@@ -12,7 +12,6 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private SoundClip[] _radioClips;
     [SerializeField] private TextMeshProUGUI _text;
 
-    private event Action ClipEnded;
     // Start is called before the first frame update
     void Start()
     {
