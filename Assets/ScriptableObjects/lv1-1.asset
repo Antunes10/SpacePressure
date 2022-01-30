@@ -15,7 +15,7 @@ MonoBehaviour:
   Clip: {fileID: 8300000, guid: 5d944ce3ef1604d4da7697ad86576179, type: 3}
   Lines:
   - line: 
-    wait: 1
+    wait: 0.7
     endline: 0
   - line: You're awake?
     wait: 1.5
