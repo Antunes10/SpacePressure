@@ -10,6 +10,8 @@ public class ScreenManager : MonoBehaviour
     private GameManager _gameManager;
     private AudioManager _audioManager;
 
+    private int count = 0;
+
     private event Action OnScreenFade;
     public event Action ShowingE;
     void Start()
@@ -50,11 +52,12 @@ public class ScreenManager : MonoBehaviour
 
     void FinalLine()
     {
-        if(_gameManager._ProgressGame == 0 || _gameManager._ProgressGame == 1)
+        if((_gameManager._ProgressGame == 0 || _gameManager._ProgressGame == 1) && count < 2)
         {
             ShowingE?.Invoke();
             Debug.Log("SHOW E");
             ShowE();
+            count += 1;
         }
     }
 

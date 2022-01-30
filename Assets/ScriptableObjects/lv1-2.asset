@@ -16,48 +16,71 @@ MonoBehaviour:
   Lines:
   - line: 
     wait: 1
+    endline: 0
   - line: Well done!
     wait: 1.5
+    endline: 0
   - line: 
     wait: 0.2
+    endline: 0
   - line: But now listen to me closely.
     wait: 2
+    endline: 0
   - line: 
     wait: 0.2
+    endline: 0
   - line: That power is crutial for us to get out of here alive.
     wait: 3.3
+    endline: 0
   - line: 
     wait: 0.5
+    endline: 0
   - line: However it might leads us to perdition as well.
     wait: 4
+    endline: 0
   - line: 
     wait: 0.5
+    endline: 0
   - line: It is crutial that you use it as little as possible.
     wait: 3.7
+    endline: 0
   - line: 
     wait: 0.5
+    endline: 0
   - line: Or we will both die here.
     wait: 2.5
+    endline: 0
   - line: 
     wait: 0.6
+    endline: 0
   - line: Right now we...
     wait: 1.5
+    endline: 0
   - line: 
     wait: 0.2
+    endline: 0
   - line: I mean, you...
     wait: 2
+    endline: 0
   - line: 
     wait: 0.5
+    endline: 0
   - line: You will have to repair the air filters.
     wait: 2
+    endline: 0
   - line: 
     wait: 0.5
+    endline: 0
   - line: You have to go to the storage to get two new fuses.
     wait: 3.2
+    endline: 0
   - line: 
     wait: 0.7
+    endline: 0
   - line: Its at the right of the infirmary.
     wait: 2.5
+    endline: 0
   - line: 
     wait: 1
+    endline: 1
   loopable: 0

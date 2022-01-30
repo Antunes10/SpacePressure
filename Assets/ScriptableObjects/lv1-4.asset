@@ -16,40 +16,59 @@ MonoBehaviour:
   Lines:
   - line: 
     wait: 0.5
+    endline: 0
   - line: Well done, looks like we might survive this.
     wait: 4
+    endline: 0
   - line: 
     wait: 0.8
+    endline: 0
   - line: But lets not get carried away, there is still a lot to fix.
     wait: 4.5
+    endline: 0
   - line: 
     wait: 0.5
+    endline: 0
   - line: We need to access the escape pods to get out of this hellhole.
     wait: 4
+    endline: 0
   - line: 
     wait: 1
+    endline: 0
   - line: But I'm stuck in the cargo hold.
     wait: 2
+    endline: 0
   - line: 
     wait: 0.5
+    endline: 0
   - line: Which means you'll have to do the hard work.
     wait: 3.7
+    endline: 0
   - line: 
     wait: 0.5
+    endline: 0
   - line: I'll guide you through it.
     wait: 2
+    endline: 0
   - line: 
     wait: 2.2
+    endline: 0
   - line: Right, the next step...
     wait: 2.2
+    endline: 0
   - line: 
     wait: 0.5
+    endline: 0
   - line: We need to unlock the hatch to the second level.
     wait: 2.7
+    endline: 0
   - line: 
     wait: 0.3
+    endline: 0
   - line: The keys are on the Captain's cabin, I think
     wait: 2.7
+    endline: 0
   - line: 
     wait: 0.5
+    endline: 1
   loopable: 0

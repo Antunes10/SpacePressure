@@ -16,20 +16,29 @@ MonoBehaviour:
   Lines:
   - line: 
     wait: 0.5
+    endline: 0
   - line: If there is only one...
     wait: 1.2
+    endline: 0
   - line: 
     wait: 0.2
+    endline: 0
   - line: You will have to find the other.
     wait: 2.2
+    endline: 0
   - line: 
     wait: 0.1
+    endline: 0
   - line: The device might help.
     wait: 2
+    endline: 0
   - line: 
     wait: 0.2
+    endline: 0
   - line: Anyway, take them to the Air filters and place them in the machines.
     wait: 4.5
+    endline: 0
   - line: 
     wait: 0.5
+    endline: 1
   loopable: 0

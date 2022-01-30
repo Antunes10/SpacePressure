@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FirstDoor : MonoBehaviour
+public class VoiceTrigger : MonoBehaviour
 {
     private AudioManager _audioManager;
     private GameManager _gameManager;
