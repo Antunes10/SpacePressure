@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Elbow Pipe Pickup
   - Fuse Pickup
+  - T Pipe Pickup
   layers:
   - Default
   - TransparentFX
