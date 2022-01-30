@@ -86,7 +86,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: corredor_3 (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7506545277032312694, guid: 5aa7c4afede580640989bd380a5cbffd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5aa7c4afede580640989bd380a5cbffd, type: 3}
 --- !u!4 &7036189280501188895 stripped
 Transform:
