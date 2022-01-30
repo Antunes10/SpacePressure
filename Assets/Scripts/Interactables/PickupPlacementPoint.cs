@@ -6,15 +6,13 @@ using System;
 public class PickupPlacementPoint : Interactable
 {
     public event Action Complete;
-    public GameObject targetObject;
+    public string targetObjectTag;
     public bool completed;
 
     public override void Interact() {
         if(!completed && PlayerPickup.Instance.currentObject != null) {
-            if(PlayerPickup.Instance.currentObject == targetObject) {
-                //FIXME: talvez passar verificação para nome do objeto para poder
-                //          aceitar qualquer objeto que tenha aquela forma (eg: pipe). Requer
-                //          é consistência nos nomes dos clones
+            if(PlayerPickup.Instance.currentObject.tag == targetObjectTag) {
+
                 GameObject obj = PlayerPickup.Instance.currentObject;
 
                 PlayerPickup.Instance.Drop();
@@ -28,7 +26,6 @@ public class PickupPlacementPoint : Interactable
                 completed = true;
                 Complete?.Invoke();
 
-                GetComponent<MirageObject>().DisableInteraction();
                 GetComponent<Collider>().enabled = false;
                 GetComponent<MeshRenderer>().enabled = false;
             } else {
